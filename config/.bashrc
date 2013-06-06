@@ -2,8 +2,9 @@
 export PATHDEFAULT=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATHRVM=$HOME/.rvm/bin
 export PATHPORT=/opt/local/bin:/opt/local/sbin
-export PATHGOOG=$HOME/Google\ Drive/scriptz/settingz/osx/
-export PATH="$PATHPORT:$PATHRVM:$PATHDEFAULT:$PATHGOOG"
+export PATHGOOG=$HOME/Google\ Drive/scriptz/settingz/osx
+export PATHHEROKU=/usr/local/heroku/bin
+export PATH="$PATHPORT:$PATHRVM:$PATHGOOG:$PATHHEROKU:$PATHDEFAULT"
 
 # TERMINAL COLORS
 PSTART="\e[0:34m"
