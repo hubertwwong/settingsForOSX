@@ -4,7 +4,7 @@ export PATHRVM=$HOME/.rvm/bin
 export PATHPORT=/opt/local/bin:/opt/local/sbin
 export PATHGOOG=$HOME/Google\ Drive/scriptz/settingz/osx
 export PATHHEROKU=/usr/local/heroku/bin
-export PATH="$PATHPORT:$PATHRVM:$PATHGOOG:$PATHHEROKU:$PATHDEFAULT"
+export PATH=:"$PATHRVM:$PATHPORT:$PATHGOOG:$PATHHEROKU:$PATHDEFAULT"
 
 # TERMINAL COLORS
 PSTART="\e[0:34m"
@@ -17,3 +17,7 @@ REND="\e[m"
 # TERMINAL
 export PS1="$QSTART\d$QEND | $QSTART\@$QEND | $RSTART\u$REND |  $PSTART\w$PEND 
 "
+
+# Load RVM into a shell session *as a function*
+# this needs to come last.
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
