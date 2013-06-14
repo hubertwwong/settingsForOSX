@@ -18,6 +18,32 @@ REND="\e[m"
 export PS1="$QSTART\d$QEND | $QSTART\@$QEND | $RSTART\u$REND |  $PSTART\w$PEND 
 "
 
+# ALIASES
+##############################################################################
+
+# aliases for paths.
+alias ppRailsAuth='cd $HOME/Google\ Drive/code/main/rails/auth_from_scratch_01'
+
+# aliases for shells.
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias l='ls -G'
+alias ll='ls -Gal'
+
+# aliases for macports
+alias mpAll='sudo port selfupdate && sudo port upgrade outdated'
+alias mpUpdate='sudo port selfupdate'
+alias mpUpgrade='sudo port upgrade outdated'
+
+# aliases for rvm
+alias rrvmi='rvm install '
+alias rrvmu='rvm use '
+alias rrvml='rvm list'
+
+# aliases for git
+
+
 # Load RVM into a shell session *as a function*
 # this needs to come last.
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
